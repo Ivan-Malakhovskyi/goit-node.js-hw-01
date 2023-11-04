@@ -177,3 +177,42 @@ return console.log(allContactsList);
 
 // const { argv } = yargs(process.argv.slice(2));
 // invokeAction(argv);
+
+// const fs = require("fs").promises;
+
+// fs.readdir(\_\_dirname).then((files) => {
+// return Promise.all(files.map(async));
+// });
+
+//? Реекспорт
+// export { log } from "./main.mjs";
+// export { info } from "./main.mjs";
+
+// export { log } from "./main.js";
+// export { info } from "./main.js";
+
+//\*Common js
+
+// const logger = require("./index.test");
+
+// logger.info("info");
+// logger.log("info");
+
+const info = (msg) => {
+console.log(`Info ${msg}`);
+};
+
+const log = (msg) => {
+console.log(`log ${msg}`);
+};
+
+// module.exports = {
+// info,
+// log,
+// };
+
+//\* Або через ECMAScript модулі, встановивши в package.json "type": "module"
+// import { log, info } from ".";
+
+// log();
+// info();
