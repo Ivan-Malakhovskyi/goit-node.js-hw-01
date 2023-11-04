@@ -59,7 +59,7 @@ export const removeContact = async (contactId) => {
     const [result] = contacts.splice(idx, 1);
     await updateContact(contacts);
 
-    return result;
+    return result || null;
   } catch (error) {
     console.log(error.message);
   }
